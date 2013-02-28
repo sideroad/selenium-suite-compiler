@@ -1,0 +1,28 @@
+#!/usr/bin/env node
+var opts = require('opts');
+
+opts.parse([
+  {
+    'short': 's',
+    'long': 'src',
+    'description': 'Target source',
+    'value': true,
+    'required': true
+  },
+  {
+    'short': 'd',
+    'long': 'dist',
+    'description': 'Output directory',
+    'value': true,
+    'required': true
+  },
+  {
+    'short': 'su',
+    'long': 'suffix',
+    'description': 'Suite case suffix',
+    'value': true,
+    'required': false
+  }
+
+]);
+require('../lib/selenium-compiler').compile( opts );

@@ -1,0 +1,22 @@
+{
+  "name": "selenium-suite-compiler",
+  "version": "0.0.1",
+  "description": "Compose selenium suites to one suite file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "selenium"
+  ],
+  "dependencies": {
+    "handlebars": "~1.0.10",
+    "wrench": "~1.4.4",
+    "opts": "~1.2.2",
+    "jsdom": "~0.5.0",
+    "underscore": "~1.4.4",
+    "async": "~0.2.5"
+  },
+  "author": "sideroad",
+  "license": "MIT"
+}
